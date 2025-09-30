@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi - Cosmic Realty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Cosmic Realty</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="produk.html" class="nav-link">Produk</a>
+                <a href="konsultasi.html" class="nav-link active">Konsultasi</a>
+                <a href="kontak.html" class="nav-link">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Konsultasi Properti Antariksa</h1>
+            <p class="hero-subtitle">
+                Dapatkan panduan ahli dari konsultan properti antariksa berpengalaman kami
+            </p>
+            <div class="hero-buttons">
+                <a href="#form" class="btn-primary">Mulai Konsultasi</a>
+                <a href="tim.html" class="btn-secondary">Lihat Konsultan</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="planet-animation"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Jenis Konsultasi</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Konsultasi Investasi</h3>
+                <p>Analisis ROI dan potensi keuntungan properti antariksa</p>
+                <div class="product-price" style="margin: 1rem 0;">
+                    <span class="current-price">Gratis</span>
+                </div>
+                <a href="#form" class="btn-outline">Pilih Layanan</a>
+            </div>
+            <div class="feature-card">
+                <h3>Survey Lokasi</h3>
+                <p>Pemindaian detail kondisi planet dan lingkungan orbit</p>
+                <div class="product-price" style="margin: 1rem 0;">
+                    <span class="current-price">500K Credit</span>
+                </div>
+                <a href="#form" class="btn-outline">Pilih Layanan</a>
+            </div>
+            <div class="feature-card">
+                <h3>Konsultasi Legal</h3>
+                <p>Bantuan hukum dan perizinan kepemilikan antariksa</p>
+                <div class="product-price" style="margin: 1rem 0;">
+                    <span class="current-price">250K Credit</span>
+                </div>
+                <a href="#form" class="btn-outline">Pilih Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="form" class="section">
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Formulir Konsultasi</h2>
+            <form class="newsletter-form" style="flex-direction: column; gap: 1rem;">
+                <div class="form-group">
+                    <label class="form-label">Jenis Konsultasi</label>
+                    <select class="form-select" required>
+                        <option value="">Pilih jenis konsultasi</option>
+                        <option value="investasi">Konsultasi Investasi</option>
+                        <option value="survey">Survey Lokasi</option>
+                        <option value="legal">Konsultasi Legal</option>
+                        <option value="custom">Kustom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-input" placeholder="Masukkan nama lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="alamat@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Jenis Properti yang Diminati</label>
+                    <select class="form-select" required>
+                        <option value="">Pilih properti</option>
+                        <option value="planet">Planet</option>
+                        <option value="bintang">Bintang</option>
+                        <option value="galaksi">Galaksi</option>
+                        <option value="sistem">Sistem Tata Surya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Pesan/Kebutuhan Khusus</label>
+                    <textarea class="form-textarea" placeholder="Jelaskan kebutuhan konsultasi Anda..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Kirim Permintaan Konsultasi</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Footer sama seperti sebelumnya -->
+    </footer>
+</body>
+</html>
