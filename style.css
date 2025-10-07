@@ -1,4 +1,4 @@
-/* style.css - File CSS umum untuk semua halaman Cosmic Realty dengan Animasi */
+/* File CSS untuk semua halaman Cosmic Realty dengan Animasi */
 :root {
   --primary-color: #6e44ff;
   --secondary-color: #00e5ff;
@@ -32,7 +32,7 @@ body {
     radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.1) 0%, transparent 20%);
 }
 
-/* Typography */
+/* Tipografi */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
@@ -115,7 +115,7 @@ a:hover {
   animation: expandWidth 1s ease-out 0.5s forwards;
 }
 
-/* Navigation dengan Animasi */
+/* Navigasi pake Animasi */
 .navbar {
   position: fixed;
   top: 0;
@@ -215,7 +215,7 @@ a:hover {
   animation: pulse 2s infinite;
 }
 
-/* Buttons dengan Animasi */
+/* Button pake Animasi */
 .btn-primary, .btn-secondary, .btn-outline {
   display: inline-block;
   padding: 12px 30px;
@@ -283,7 +283,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Hero Sections dengan Animasi */
+/* Hero Sections pake Animasi */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -392,7 +392,6 @@ a:hover {
   animation: pulse 3s ease-in-out infinite;
 }
 
-/* PERBAIKAN: Cards tanpa backdrop-filter yang bermasalah */
 .features-grid, .products-grid, .team-grid, .awards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -408,8 +407,8 @@ a:hover {
   text-align: center;
   transition: var(--transition);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  /* HAPUS backdrop-filter yang menyebabkan masalah */
-  /* backdrop-filter: blur(10px); */
+
+  
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.6s ease-out forwards;
@@ -422,12 +421,12 @@ a:hover {
 .feature-card:nth-child(3) { animation-delay: 0.3s; }
 .feature-card:nth-child(4) { animation-delay: 0.4s; }
 
-/* PERBAIKAN: Hover effect yang lebih aman */
+
 .feature-card:hover, .product-card:hover, .team-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--neon-glow);
   border-color: var(--secondary-color);
-  /* Hapus scale untuk menghindari flicker */
+ 
 }
 
 .feature-icon, .award-icon {
@@ -437,10 +436,10 @@ a:hover {
   animation: bounceIn 1s ease-out;
 }
 
-/* PERBAIKAN: Product Card tanpa backdrop-filter */
+
 .product-card {
   position: relative;
-  overflow: visible; /* Ubah dari hidden ke visible */
+  overflow: visible; 
   text-align: left;
   padding: 0;
   animation-duration: 0.8s;
@@ -469,7 +468,7 @@ a:hover {
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
-  z-index: 10; /* Tingkatkan z-index */
+  z-index: 10; 
   animation: bounce 2s infinite;
 }
 
@@ -501,7 +500,7 @@ a:hover {
   background: linear-gradient(135deg, #ffaa00, #ff2e63);
 }
 
-/* PERBAIKAN: Product actions dengan z-index yang tepat */
+
 .product-actions {
   position: absolute;
   top: 1rem;
@@ -511,7 +510,7 @@ a:hover {
   opacity: 0;
   transform: translateX(20px);
   transition: all 0.3s ease;
-  z-index: 10; /* Tambahkan z-index */
+  z-index: 10; 
 }
 
 .product-card:hover .product-actions {
@@ -531,7 +530,7 @@ a:hover {
   justify-content: center;
   cursor: pointer;
   transition: var(--transition);
-  /* Hapus backdrop-filter */
+  
 }
 
 .action-btn:hover {
@@ -545,7 +544,7 @@ a:hover {
   opacity: 0;
 }
 
-/* Forms dengan Animasi */
+
 .form-container {
   max-width: 500px;
   margin: 0 auto;
@@ -592,7 +591,6 @@ a:hover {
   animation: inputFocus 0.3s ease-out;
 }
 
-/* Search and Filters dengan Animasi */
 .search-bar {
   display: flex;
   max-width: 500px;
@@ -633,7 +631,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Pagination dengan Animasi */
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -660,7 +658,7 @@ a:hover {
   animation: bounce 0.5s ease;
 }
 
-/* Testimonials dengan Animasi */
+/* Testimoni dengan Animasi */
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -715,7 +713,7 @@ a:hover {
   animation: pulse 3s infinite;
 }
 
-/* Newsletter dengan Animasi */
+/* Newsletter pake Animasi */
 .newsletter {
   background: var(--card-bg);
   border-radius: var(--border-radius);
@@ -765,7 +763,7 @@ a:hover {
   animation: inputPulse 0.5s ease-out;
 }
 
-/* CTA Sections dengan Animasi */
+/* CTA Sections pake Animasi */
 .cta-section {
   background: var(--card-bg);
   border-radius: var(--border-radius);
@@ -787,7 +785,7 @@ a:hover {
   opacity: 0;
 }
 
-/* Footer dengan Animasi */
+/* Footer pake Animasi */
 .footer {
   background: rgba(0, 0, 0, 0.5);
   padding: 3rem 0 1rem;
@@ -868,7 +866,7 @@ a:hover {
   opacity: 0;
 }
 
-/* Stats dengan Animasi */
+/* Stats pake Animasi */
 .hero-stats {
   display: flex;
   gap: 2rem;
@@ -898,7 +896,7 @@ a:hover {
   font-size: 0.9rem;
 }
 
-/* Timeline dengan Animasi */
+/* Timeline pake Animasi */
 .timeline {
   position: relative;
   max-width: 800px;
@@ -963,7 +961,7 @@ a:hover {
   opacity: 0;
 }
 
-/* Team dengan Animasi */
+/* Team pake Animasi */
 .team-image {
   width: 120px;
   height: 120px;
@@ -1336,7 +1334,7 @@ body::before {
   to { opacity: 0; visibility: hidden; }
 }
 
-/* Scroll Animations */
+/* animasi scroll*/
 .scroll-reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -1348,7 +1346,7 @@ body::before {
   transform: translateY(0);
 }
 
-/* Hover Effects untuk Interactive Elements */
+/* Hover Effects ELements */
 .interactive:hover {
   transform: translateY(-2px);
   transition: transform 0.3s ease;
@@ -1430,4 +1428,5 @@ body::before {
   .feature-card, .product-card {
     animation: fadeInUp 0.6s ease-out forwards;
   }
+
 }
