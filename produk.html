@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produk - Cosmic Realty</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the updated layout */
+        .filters-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .filter-group {
+            margin-bottom: 0;
+        }
+        
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .product-footer {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Loading Animation -->
@@ -52,7 +89,7 @@
         </div>
     </section>
 
-    <!-- Filter Section -->
+    <!-- Filter Section - Dipindahkan ke atas -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Filter Produk</h2>
@@ -68,7 +105,7 @@
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label class="form-label">Harga</label>
+                    <label class="form-label">Harga (M Credit)</label>
                     <select class="form-select">
                         <option value="">Semua</option>
                         <option value="low">Di bawah 1M</option>
@@ -115,7 +152,7 @@
                         <h3>Nebula Orion</h3>
                         <p>Nebula cantik dengan formasi gas dan debu yang spektakuler. Cocok untuk observatorium pribadi.</p>
                         <div class="product-footer">
-                            <span class="product-price">Rp 5.200.000.000</span>
+                            <span class="product-price">5.2M Credit</span>
                             <button class="btn-primary">Tambah ke Keranjang</button>
                         </div>
                     </div>
@@ -133,7 +170,7 @@
                         <h3>Planet Kepler-186f</h3>
                         <p>Planet mirip Bumi dengan kondisi yang mendukung kehidupan. Atmosfer stabil dan sumber air melimpah.</p>
                         <div class="product-footer">
-                            <span class="product-price">Rp 8.750.000.000</span>
+                            <span class="product-price">8.75M Credit</span>
                             <button class="btn-primary">Tambah ke Keranjang</button>
                         </div>
                     </div>
@@ -150,7 +187,7 @@
                         <h3>Bintang Sirius</h3>
                         <p>Bintang paling terang di langit malam. Sumber energi tak terbatas untuk peradaban maju.</p>
                         <div class="product-footer">
-                            <span class="product-price">Rp 12.500.000.000</span>
+                            <span class="product-price">12.5M Credit</span>
                             <button class="btn-primary">Tambah ke Keranjang</button>
                         </div>
                     </div>
@@ -168,7 +205,7 @@
                         <h3>Galaksi Andromeda</h3>
                         <p>Galaksi spiral terdekat dengan Bima Sakti. Potensi pengembangan tak terbatas untuk kolonisasi.</p>
                         <div class="product-footer">
-                            <span class="product-price">Rp 25.000.000.000</span>
+                            <span class="product-price">25M Credit</span>
                             <button class="btn-primary">Tambah ke Keranjang</button>
                         </div>
                     </div>
@@ -185,7 +222,7 @@
                         <h3>Planet Mars Premium</h3>
                         <p>Planet merah dengan pemandangan spektakuler. Sudah dilengkapi dengan stasiun penelitian dasar.</p>
                         <div class="product-footer">
-                            <span class="product-price">Rp 3.800.000.000</span>
+                            <span class="product-price">3.8M Credit</span>
                             <button class="btn-primary">Tambah ke Keranjang</button>
                         </div>
                     </div>
@@ -203,7 +240,7 @@
                         <h3>Bintang Katai Putih</h3>
                         <p>Bintang stabil dengan usia panjang. Cocok untuk proyek penelitian jangka panjang.</p>
                         <div class="product-footer">
-                            <span class="product-price">Rp 6.900.000.000</span>
+                            <span class="product-price">6.9M Credit</span>
                             <button class="btn-primary">Tambah ke Keranjang</button>
                         </div>
                     </div>
