@@ -1429,4 +1429,10 @@ body::before {
     animation: fadeInUp 0.6s ease-out forwards;
   }
 
+  .form-select{
+    color: #6e44ff; /* Warna teks ungu */
+    background-color: #0a0e17; /* Warna background gelap */
+  }
+
 }
+
