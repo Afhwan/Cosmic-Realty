@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
     <!-- Navigasi -->
     <nav class="navbar">
         <div class="nav-container">
@@ -47,11 +52,325 @@
         </div>
     </section>
 
-    <!-- Konten produk akan sama seperti contoh yang Anda berikan -->
-    <!-- ... -->
+    <!-- Filter Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Filter Produk</h2>
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label class="form-label">Jenis Objek</label>
+                    <select class="form-select">
+                        <option value="">Semua</option>
+                        <option value="planet">Planet</option>
+                        <option value="bintang">Bintang</option>
+                        <option value="galaksi">Galaksi</option>
+                        <option value="nebula">Nebula</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="form-label">Harga</label>
+                    <select class="form-select">
+                        <option value="">Semua</option>
+                        <option value="low">Di bawah 1M</option>
+                        <option value="medium">1M - 10M</option>
+                        <option value="high">Di atas 10M</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="form-label">Ukuran</label>
+                    <select class="form-select">
+                        <option value="">Semua</option>
+                        <option value="small">Kecil</option>
+                        <option value="medium">Sedang</option>
+                        <option value="large">Besar</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="form-label">Kondisi</label>
+                    <select class="form-select">
+                        <option value="">Semua</option>
+                        <option value="new">Baru</option>
+                        <option value="used">Bekas</option>
+                        <option value="ancient">Kuno</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Products Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Katalog Kosmik</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-badge">Terlaris</div>
+                    <div class="product-image planet-1"></div>
+                    <div class="product-actions">
+                        <button class="action-btn">❤️</button>
+                        <button class="action-btn">👁️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nebula Orion</h3>
+                        <p>Nebula cantik dengan formasi gas dan debu yang spektakuler. Cocok untuk observatorium pribadi.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 5.200.000.000</span>
+                            <button class="btn-primary">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-badge">Diskon 20%</div>
+                    <div class="product-image planet-2"></div>
+                    <div class="product-actions">
+                        <button class="action-btn">❤️</button>
+                        <button class="action-btn">👁️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Planet Kepler-186f</h3>
+                        <p>Planet mirip Bumi dengan kondisi yang mendukung kehidupan. Atmosfer stabil dan sumber air melimpah.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 8.750.000.000</span>
+                            <button class="btn-primary">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image planet-3"></div>
+                    <div class="product-actions">
+                        <button class="action-btn">❤️</button>
+                        <button class="action-btn">👁️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bintang Sirius</h3>
+                        <p>Bintang paling terang di langit malam. Sumber energi tak terbatas untuk peradaban maju.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 12.500.000.000</span>
+                            <button class="btn-primary">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-badge">Baru</div>
+                    <div class="product-image planet-4"></div>
+                    <div class="product-actions">
+                        <button class="action-btn">❤️</button>
+                        <button class="action-btn">👁️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Galaksi Andromeda</h3>
+                        <p>Galaksi spiral terdekat dengan Bima Sakti. Potensi pengembangan tak terbatas untuk kolonisasi.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 25.000.000.000</span>
+                            <button class="btn-primary">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-image galaxy-1"></div>
+                    <div class="product-actions">
+                        <button class="action-btn">❤️</button>
+                        <button class="action-btn">👁️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Planet Mars Premium</h3>
+                        <p>Planet merah dengan pemandangan spektakuler. Sudah dilengkapi dengan stasiun penelitian dasar.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 3.800.000.000</span>
+                            <button class="btn-primary">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card scroll-reveal">
+                    <div class="product-badge">Hemat</div>
+                    <div class="product-image star-1"></div>
+                    <div class="product-actions">
+                        <button class="action-btn">❤️</button>
+                        <button class="action-btn">👁️</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bintang Katai Putih</h3>
+                        <p>Bintang stabil dengan usia panjang. Cocok untuk proyek penelitian jangka panjang.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 6.900.000.000</span>
+                            <button class="btn-primary">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-btn">Sebelumnya</a>
+                <a href="#" class="page-number active">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+                <a href="#" class="page-btn">Selanjutnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Testimoni Pelanggan</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        "Cosmic Realty membantu saya menemukan planet impian untuk koloni pertama manusia. Pelayanan luar biasa!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>Elon Musk</h4>
+                            <p>CEO SpaceX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        "Galaksi yang saya beli memiliki potensi ekonomi yang luar biasa. Investasi terbaik saya sepanjang masa!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>Jeff Bezos</h4>
+                            <p>Pendiri Blue Origin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        "Proses pembelian nebula sangat mudah dan transparan. Tim Cosmic Realty sangat profesional."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>Richard Branson</h4>
+                            <p>Pendiri Virgin Galactic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-section scroll-reveal">
+                <h2>Siap Memiliki Bagian dari Alam Semesta?</h2>
+                <p>Bergabunglah dengan ribuan pelanggan puas yang telah menemukan properti kosmik impian mereka.</p>
+                <div class="cta-buttons">
+                    <a href="daftar.html" class="btn-primary">Daftar Sekarang</a>
+                    <a href="kontak.html" class="btn-secondary">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <!-- Footer sama seperti index.html -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cosmic Realty</h3>
+                <p>Pemimpin dalam penjualan properti kosmik sejak 2050. Membantu Anda memiliki bagian dari alam semesta.</p>
+                <div class="team-social">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">Planet</a></li>
+                    <li><a href="#">Bintang</a></li>
+                    <li><a href="#">Galaksi</a></li>
+                    <li><a href="#">Nebula</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <ul>
+                    <li>🌌 Stasiun Luar Angkasa Internasional</li>
+                    <li>📞 +1 (555) COSMIC</li>
+                    <li>✉️ info@cosmicrealty.com</li>
+                    <li>🕒 24/7 - Waktu Bumi</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Cosmic Realty. Semua hak dilindungi undang-undang galaksi.</p>
+        </div>
     </footer>
+
+    <script>
+        // Scroll reveal animation
+        const scrollReveal = () => {
+            const elements = document.querySelectorAll('.scroll-reveal');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('revealed');
+                }
+            });
+        };
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            // Loading animation
+            setTimeout(() => {
+                document.querySelector('.loading').style.display = 'none';
+            }, 2000);
+            
+            // Initial scroll reveal check
+            scrollReveal();
+        });
+
+        // Check on scroll
+        window.addEventListener('scroll', scrollReveal);
+
+        // Cart functionality
+        const cartButtons = document.querySelectorAll('.btn-primary');
+        const cartCount = document.querySelector('.cart-count');
+        let count = 0;
+
+        cartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                count++;
+                cartCount.textContent = count;
+                
+                // Add animation to cart
+                cartCount.parentElement.classList.add('bounce');
+                setTimeout(() => {
+                    cartCount.parentElement.classList.remove('bounce');
+                }, 500);
+            });
+        });
+    </script>
 </body>
 </html>
